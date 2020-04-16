@@ -10,10 +10,11 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-
 const pigLatin = (word) => {
-
+  
   word = word.trim().toLowerCase();
+
+  word = document.getElementById("input");
 
   let vowels = ['a', 'e', 'i', 'o', 'u'];
   let newString = "";
@@ -26,9 +27,11 @@ const pigLatin = (word) => {
         let vowel = word.indexOf(firstVowelIndex[0]); // Vowel will give us the index of the first vowel found in the string using indexOf().
         newString = word.substring(vowel) + word.substring(0, vowel) + "ay"; // At this point we have the index of the first occurring vowel, we use that number in our substring argument. The first part of the expression represents the part of the word without the consonant beginning, while the second part of the expression represents the consonant. We concate both the strings together and finally add "ay" at the end.
         return newString;
-    }
-
+    } 
 }
+document.getElementById("output").innerHTML = newString;
+
+
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
