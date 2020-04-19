@@ -14,8 +14,8 @@ const pigLatin = (word) => {
   
   word = word.trim().toLowerCase();
 
-  word = document.getElementById("input");
-
+  word = document.getElementById('input').value;
+ 
   let vowels = ['a', 'e', 'i', 'o', 'u'];
   let newString = "";
   // if statement checks to see if the word starts with a vowel, if so "yay" is added to the end of the word and outputted.
@@ -29,7 +29,8 @@ const pigLatin = (word) => {
         return newString;
     } 
 }
-document.getElementById("output").innerHTML = newString;
+document.getElementById('output').value = newString;
+
 
 
 

@@ -3,7 +3,8 @@ body {
 }
 
 .centered {
-    margin: auto;
+    text-align: center;
+    margin-top: 20px;
 }
 
 h1 {
@@ -34,4 +35,10 @@ button {
     font-size: 16px;
     margin: 40px 2px;
     cursor: pointer;
+}
+
+p {
+    font-family: fantasy;
+    font-size: 2em;
+    color: black;
 }
