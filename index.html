@@ -11,9 +11,9 @@
   <h1>Pig Latin</h1>
     <hr/>
     <div class="centered">
-      <input type="text" id="input"> 
+      <input type="text" onfocus="this.value=''" id="input"> 
       <br>
-      <button onclick="output.value=pigLatin(input.value)">Change to Pig Latin.</button>
+      <button onclick="pigLatin()" id="translation">Change to Pig Latin.</button>
       <br>
       <p id="output"></p>
     </div>
